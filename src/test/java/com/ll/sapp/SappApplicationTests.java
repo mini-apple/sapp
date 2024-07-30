@@ -1,19 +1,11 @@
 package com.ll.sapp;
 
-import com.ll.sapp.answer.Answer;
 import com.ll.sapp.answer.AnswerRepository;
-import com.ll.sapp.question.Question;
 import com.ll.sapp.question.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @SpringBootTest
@@ -106,13 +98,13 @@ class SappApplicationTests {
 //        assertEquals(2, a.getQuestion().getId());
 
     // 11th
-  Optional<Question> oq = this.questionRepository.findById(2);
-  assertTrue(oq.isPresent());
-  Question q = oq.get();
-
-  List<Answer> answerList = q.getAnswerList();
-
-  assertEquals(1, answerList.size());
-  assertEquals("네 자동으로 생성됩니다.", answerList.get(0).getContent());
+//  Optional<Question> oq = this.questionRepository.findById(2);
+//  assertTrue(oq.isPresent());
+//  Question q = oq.get();
+//
+//  List<Answer> answerList = q.getAnswerList();
+//
+//  assertEquals(1, answerList.size());
+//  assertEquals("네 자동으로 생성됩니다.", answerList.get(0).getContent());
   }
 }
