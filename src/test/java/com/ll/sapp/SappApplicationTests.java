@@ -1,5 +1,9 @@
 package com.ll.sapp;
 
+import com.ll.sapp.answer.Answer;
+import com.ll.sapp.answer.AnswerRepository;
+import com.ll.sapp.question.Question;
+import com.ll.sapp.question.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
